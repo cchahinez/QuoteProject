@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+form{
+	margin: 5px 10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 90%;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

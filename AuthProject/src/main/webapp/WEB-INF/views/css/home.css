@@ -1,0 +1,102 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	 background: #f6f5f7;
+	
+}
+header{
+	background: linear-gradient(45deg, #FC466B, #3F5EFB);
+	width: 100%;
+	height: min-content;
+	
+}
+header div{
+	display : flex;
+	flex-direction: row;
+	padding-right:50px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	column-gap: 5em;
+	justify-content:space-between;
+	align-items: center;
+}
+hr{	
+	color : #eeeeec;
+	margin-left:150px;
+	margin-right : 150px;
+}
+a{
+	background: transparent;
+	padding: 10px 9px;
+	border: 1px solid transparent;
+	letter-spacing: 0.15em;
+	color :white;
+	font-size: 17px;
+	font-weight: bolder;
+	cursor: pointer;
+	position:relative;
+}
+.signinClick::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.signinClick:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+.mainGrid{
+	margin-top:0px;
+	margin-right:15px;
+	margin-left:15px;
+	margin-bottom: 20px;
+	display:flex;
+	flex-direction:column;
+	row-gap: 1em;
+	justify-content:center;
+	align-items:center;
+}
+h1{
+	text-align : center;
+}
+.lignGrid{
+	display:flex;
+	flex-direction:row;
+	column-gap: 3em;
+	justify-content:flex-start;
+	align-items:center;
+	position:relative;
+}
+.lignGrid p{
+	border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(186, 189, 182,0.6), 
+      0 10px 10px rgb(59, 16, 235,0.5);
+  overflow: hidden;
+  width: 300px;
+  max-width: 100%;
+  height: 100px;  
+	padding : 5px 4px;
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 10px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 2px 0;
+}
